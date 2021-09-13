@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhrasesOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ulv-yC-Lbg">
+                                <rect key="frame" x="20" y="78" width="374" height="140"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZm-h0-On9">
+                                <rect key="frame" x="147" y="261" width="120" height="52"/>
+                                <color key="backgroundColor" red="0.32866835589999999" green="0.52831643819999996" blue="0.097855471070000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="3FM-NI-yF7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="McU-Ia-NQM"/>
+                                    <constraint firstAttribute="height" constant="52" id="n72-8r-LUa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Nova frase">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonNewPhrases:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBS-hJ-jEF"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="7UP-mb-NyQ">
+                                <rect key="frame" x="354" y="636" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9XX-nm-rhC"/>
+                                    <constraint firstAttribute="width" constant="40" id="flG-g2-uds"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lua-XB-pWL">
+                                <rect key="frame" x="20" y="409" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4M2-zF-aRd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda" translatesAutoresizingMaskIntoConstraints="NO" id="5LF-y1-9O7">
+                                <rect key="frame" x="20" y="351" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="hur-2b-PgN"/>
+                                    <constraint firstAttribute="width" constant="40" id="wkQ-B3-ccd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lua-XB-pWL" secondAttribute="trailing" constant="20" id="4Gs-vL-sAL"/>
+                            <constraint firstItem="ulv-yC-Lbg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DzT-ic-8Ws"/>
+                            <constraint firstItem="7UP-mb-NyQ" firstAttribute="top" secondItem="lua-XB-pWL" secondAttribute="bottom" constant="27" id="MI6-66-RRZ"/>
+                            <constraint firstItem="nZm-h0-On9" firstAttribute="centerX" secondItem="ulv-yC-Lbg" secondAttribute="centerX" id="Maj-0h-BI5"/>
+                            <constraint firstItem="lua-XB-pWL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TTZ-MC-W8R"/>
+                            <constraint firstItem="5LF-y1-9O7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="blV-9l-rxJ"/>
+                            <constraint firstItem="nZm-h0-On9" firstAttribute="top" secondItem="ulv-yC-Lbg" secondAttribute="bottom" constant="43" id="dWf-Df-0X3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7UP-mb-NyQ" secondAttribute="trailing" constant="20" id="f1y-dN-qM6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ulv-yC-Lbg" secondAttribute="trailing" constant="20" id="kcv-m6-4bl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lua-XB-pWL" secondAttribute="bottom" constant="253" id="m6R-kn-AmQ"/>
+                            <constraint firstItem="ulv-yC-Lbg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="vpZ-7s-qXo"/>
+                            <constraint firstItem="5LF-y1-9O7" firstAttribute="top" secondItem="nZm-h0-On9" secondAttribute="bottom" constant="38" id="y4w-xh-uif"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textPhrases" destination="lua-XB-pWL" id="UZE-DE-6d7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita" width="56" height="55"/>
+        <image name="aspas-esquerda" width="57" height="54"/>
+        <image name="logo" width="253" height="140"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
